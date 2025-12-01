@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkaprava Bhunia - Backend Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Particles Container -->
+    <div class="bg-animation" id="bgAnimation"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo" onclick="window.scrollTo({top:0, behavior:'smooth'})">AB</div>
+        <div class="menu-btn" id="menuBtn">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Arkaprava Bhunia</h1>
+            <h2>Backend Software Developer</h2>
+            <p>Specializing in Java, Spring Boot & Enterprise Solutions | 3+ Years Experience in Building Scalable Systems</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-secondary">View Projects</a>
+                <!-- Updated Download Link: Use target=_blank for external drive links -->
+                <a href="https://drive.google.com/file/d/17kzyFUsV75Q4H9GtskSxfa_nKCKVhFK2/view?usp=sharing" target="_blank" class="btn btn-secondary">Download CV</a>
+            </div>
+            
+            <div class="social-links" style="margin-top: 3rem;">
+                <a href="https://www.linkedin.com/in/arkaprava-bhunia-sde/" target="_blank" class="social-link" title="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path></svg>
+                </a>
+                <a href="https://github.com/ArkapravaBhunia" target="_blank" class="social-link" title="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://leetcode.com/u/arkapravabhunia4/" target="_blank" class="social-link" title="LeetCode">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+                </a>
+                <a href="https://www.geeksforgeeks.org/profile/arkapravabhunia4" target="_blank" class="social-link" title="GeeksForGeeks">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21.45 14.315c-.143.28-.334.532-.565.745a3.691 3.691 0 0 1-1.104.695 4.51 4.51 0 0 1-3.116-.016 3.04 3.04 0 0 1-2.135-2.078 3.178 3.178 0 0 1-.025-.745 3.904 3.904 0 0 1 .082-.713c.116-.38.295-.736.528-1.052a3.53 3.53 0 0 1 1.278-1.09A4.08 4.08 0 0 1 19.5 9.8a3.92 3.92 0 0 1 1.528.37 3.47 3.47 0 0 1 1.235 1.004c.34.39.584.848.716 1.344a4.13 4.13 0 0 1 .096 1.461 3.5 3.5 0 0 1-.644 1.636zm-18.9 0c-.143.28-.334.532-.565.745a3.691 3.691 0 0 1-1.104.695 4.51 4.51 0 0 1-3.116-.016A3.04 3.04 0 0 1-.32 13.661a3.178 3.178 0 0 1-.025-.745 3.904 3.904 0 0 1 .082-.713c.116-.38.295-.736.528-1.052a3.53 3.53 0 0 1 1.278-1.09A4.08 4.08 0 0 1 4.65 9.8a3.92 3.92 0 0 1 1.528.37 3.47 3.47 0 0 1 1.235 1.004c.34.39.584.848.716 1.344a4.13 4.13 0 0 1 .096 1.461 3.5 3.5 0 0 1-.644 1.636z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h3>About Me</h3>
+                <p>Backend Software Developer with over 3 years of experience at LabVantage Solutions, specializing in Core Java, Spring Boot, and SQL. Currently working in R&D, developing scalable enterprise applications and designing RESTful APIs for Laboratory Information Management Systems (LIMS).</p>
+                <p>I have a proven track record in the full SDLC, from requirements gathering to automation testing and product delivery. My expertise includes multi-threaded architecture, data structures and algorithms, with a strong focus on optimizing system performance.</p>
+                <p>Graduated from University of Calcutta with a B.Tech in Computer Science Engineering (8.15 CGPA), I thrive in collaborative environments and am passionate about solving complex technical challenges.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8.15</div>
+                    <div class="stat-label">CGPA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="skills-container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Core Java</span><span>95%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="95%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>JavaScript</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>SQL</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Groovy</span><span>80%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                    </div>
+                </div>
+                <!-- Frameworks -->
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Spring Boot</span><span>93%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="93%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Hibernate/JPA</span><span>88%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="88%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Spring MVC</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>JSP</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                    </div>
+                </div>
+                <!-- Database & Tools -->
+                <div class="skill-category">
+                    <h3>Database & Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>PostgreSQL</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>MySQL</span><span>88%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="88%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Oracle</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Docker</span><span>82%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="82%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="experience-container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">August 2025 - Present</div>
+                    <h3 class="timeline-title">Associate Automation Engineer</h3>
+                    <div class="timeline-company">LabVantage Solutions, Inc | Kolkata, India</div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Contributed to automation of process flows, enhancing LabVantage product functionality</li>
+                            <li>Utilized Leapwork tools to automate workflows, improving overall efficiency</li>
+                            <li>Wrote XPath and JavaScript to implement new features</li>
+                            <li>Managed data effectively using Java and CSV files, ensuring accuracy and accessibility</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">July 2023 - July 2025</div>
+                    <h3 class="timeline-title">Associate Solution Engineer</h3>
+                    <div class="timeline-company">LabVantage Solutions, Inc | Kolkata, India</div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Engineered scalable enterprise applications using Java (Spring Boot) and JavaScript for LIMS</li>
+                            <li>Designed and implemented robust RESTful APIs for seamless data integration</li>
+                            <li>Collaborated on projects for major clients including Corteva, Abbott, and Iovance</li>
+                            <li>Managed and optimized SQL queries within RDBMS (Oracle/MySQL)</li>
+                            <li>Developed Java Action classes and instrument interfacing code for SDMS</li>
+                            <li>Spearheaded automation projects using Selenium (Leapwork) and XPath</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">January 2023 - June 2023</div>
+                    <h3 class="timeline-title">Internship Trainee</h3>
+                    <div class="timeline-company">LabVantage Solutions, Inc | Kolkata, India</div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Gained hands-on experience with LabVantage product and LIMS</li>
+                            <li>Developed Action classes and SDC rules using Java</li>
+                            <li>Created JavaScript for frontend applications</li>
+                            <li>Utilized MS-SQL and Oracle databases for data management</li>
+                            <li>Received "Signing Team Award" for outstanding contributions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Job Portal Web Application</h3>
+                        <p>Full-stack job search platform with advanced search functionality and user authentication system.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">JSP</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Comprehensive e-commerce solution with product management, cart functionality, and payment integration.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Spring Boot MVC</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>LIMS Automation Framework</h3>
+                        <p>Enterprise automation solution for Laboratory Information Management Systems with complex workflow automation.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Selenium</span>
+                            <span class="tech-tag">XPath</span>
+                            <span class="tech-tag">Leapwork</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">I'm always open to discussing new opportunities, projects, or collaborations.</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:arkapravabhunia1@gmail.com">arkapravabhunia1@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <h3>Phone</h3>
+                    <a href="tel:+91 7003966317">+91 70039 66317</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Arkaprava Bhunia. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
