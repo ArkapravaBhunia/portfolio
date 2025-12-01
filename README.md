@@ -1,3 +1,3 @@
-Use protfolio-website.html for R&D only
+Use portfolio-website.html for R&D only
 
-Remainling files are for production
+Remaining files are for production
